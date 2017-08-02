@@ -12,7 +12,7 @@ namespace _1_Forms身份认证.Controllers
     {
         public ActionResult Index()
         {
-            ViewBag.UserName = Session["userName"]?.ToString();           
+            ViewBag.UserName = Session["userName"] ?? "";           
 
             return View();
         }       
